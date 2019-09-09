@@ -1,0 +1,99 @@
+Calling a Function:
+def my_function():
+  print("Hello from a function")
+
+my_function()
+----------------
+Parameters:
+Parameters are specified after the function name, inside the parentheses. You can add as many parameters as you want, just separate them with a comma.
+
+def my_function(fname):
+  print(fname + " Refsnes")
+
+my_function("Emil")
+my_function("Tobias")
+my_function("Linus")
+--------------
+Passing a List as a Parameter:
+You can send any data types of parameter to a function (string, number, list, dictionary etc.), and it will be treated as the same data type inside the function.
+
+def my_function(food):
+  for x in food:
+    print(x)
+
+fruits = ["apple", "banana", "cherry"]
+
+my_function(fruits)
+				-----------
+Return Values:
+To let a function return a value, use the return statement:
+
+def my_function(x):
+  return 5 * x
+
+print(my_function(3))
+print(my_function(5))
+print(my_function(9))
+				-----------
+Recursion:
+Recursion is a common mathematical and programming concept. It means that a function calls itself. This has the benefit of meaning that you can loop through data to reach a result.Python also accepts function recursion, which means a defined function can call itself.
+Recursion Example 		
+
+def tri_recursion(k):
+  if(k>0):
+    result = k+tri_recursion(k-1)
+    print(result)
+  else:
+    result = 0
+  return result
+
+print("\n\nRecursion Example Results")
+tri_recursion(6)
+
+--------------------
+Escape Sequences:
+
+escape sequences all start with a backslash (\)
+escape sequences can be used to display characters in python reserved for formatting
+\\   Backslash (\)
+\'   Single quote (')
+\"   Double quote (")
+escape sequences are part of special formatting charcters\n Linefeed
+\t   Tab
+\n   return or newline
+We use escape sequences in strings - usually with print() statements
+
+----------------------
+
+while True:
+Using the 'while True:' loop
+
+while True: is known as the forever loop because it ...loops forever
+
+Using the while True: statement results in a loop that continues to run forever
+...or, until the loop is interrupted, such as with a break statement
+       			-----------------------------------
+
+break:
+in a while loop, causes code flow to exit the loop
+a conditional can implement break to exit a while True loop
+-----------------
+Incrementing
+votes = votes + 1     or    votes += 1
+Decrementing
+votes = votes - 1     or   votes -= 1
+			--------------------------------
+
+
+Python len() Function:
+The len() function returns the number of items in an object. When the object is a string, the len() function returns the number of characters in the string.
+				---------------------	---------
+
+How do you print quotation marks in Python?:
+			-------------------
+ 
+Answer:You can put a backslash character followed by a quote ( \" or \' ).
+
+Example:# [ ] print output that is exactly (with quotes): "That's how we escape!"
+->  print("\"That's how we escape\"")
+			-----------------------------

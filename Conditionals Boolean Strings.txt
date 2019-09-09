@@ -1,0 +1,60 @@
+Conditionals: Boolean String test methods with if
+
+if student_name.isalpha():
+.isalnum()
+.isalpha()
+.istitle()
+.isdigit()
+.islower()
+.startswith()
+.iscapitalize()
+-----------
+Comparison Operators
+>
+<
+>=, <=
+==
+Assign = vs compare ==
+!=
+			-------------------------------------
+
+
+String Comparisons:
+
+Strings can be equal == or unequal !=
+Strings can be greater than > or less than <
+alphabetically "A" is less than "B"
+lower case "a" is greater than upper case "A"
+
+
+			-------------------------------------
+
+
+def tq_quiz(statement,t_or_f):
+    tf_quesdtion = inpurt("(T/F)"+statement+":")
+    if t_or_f.lower() == tf_quedtion.lower():
+        return("Correct")
+    else:
+	return("Incorrect")
+quiz_eval = tf_quiz("","T")
+print("your answer is :", quiz_eval)
+
+------------
+Concept: Conditional elif:
+Using the Conditional elif
+Review: if and else
+
+if means "if a condition exists then do some task." if is usually followed by else
+else means "or else after we have tested if, then do an alternative task"
+When there is a need to test for multiple conditions there is elif
+
+elif  statement follows  if, and means "else, if " another condition exists do something else
+elif  can be used many times
+else  is used after the last test condition (if or elif)
+in pseudo code
+If it is raining bring an umbrella
+or Else If  (elif) it is snowing bring a warm coat
+or Else go as usual
+
+Like else, the elif only executes when the previous if conditional is False
+			---------------------------------
